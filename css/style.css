@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.main {
+  margin-top: 20px;
+}
+html {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 14px;
+    line-height: 242%;
+    font-weight: 500;
+    letter-spacing: 0;
+    overflow-x: hidden;
+}
+.txt {
+  position: absolute;
+  z-index: 5;
+  top: 15%;
+  left: 2%;
+}
+.text {
+  color: #fff;
+  font-size: 54px;
+  font-weight: bold;
+}
+.wrapper {
+	height: 740px;
+	position: relative;
+	width: 100%;
+}
+.foto {
+    width: 100%;
+}
+.container__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.lg {
+    width: 150px;
+    height: 140px;
+}
+.src1,
+.src2,
+.src3,
+.src4 {
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  font-size: 22px;
+}
+.header_ctn {
+  display: flex;
+}
+.ctn1 {
+  margin-left: 50px;
+}
+.ctn2 {
+  margin-left: 180px;
+}
+.src2 {
+  margin-left: 250px;
+}
+.src3 {
+  margin-right: 400px;
+}
+a {
+  text-decoration: none;
+}
+.header {    
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background-color: rgb(27, 167, 76);
+    border: 3px solid rgb(1, 141, 210);
+    border-right: none;
+    border-left: none;
+    min-height: 80px;
+    z-index: 5;
+    width: 100%;
+}
+.logo {
+  position: absolute;
+  max-width: 140px;
+  left: 45%;
+  top: -45%;
+  min-height: 130px;
+  background: #fff;
+  border-radius: 50%;
+  border: 3px solid rgb(1, 141, 210);
+}
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 120px;
+}
+.right__foto {
+    border-radius: 20px;
+    max-width: 650px;
+    max-height: 500px;
+}
+.left {
+    max-width: 650px;
+}
+.left_text {
+    font-size: 17px;
+    margin-top: 20px;
+    line-height: 1.9;
+}
+
+.time {
+    margin-top: 70px;
+}
+.swiper-container-wrapper--timeline .swiper-slide1 {
+    display: flex;
+    background-image: url("/return/img/1s.jpg" );
+    text-align: center;
+    min-height: 650px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  .swiper-container-wrapper--timeline .swiper-slide2 {
+    display: flex;
+    background-image: url("/return/img/2s.jpg" );
+    min-height: 650px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  .swiper-container-wrapper--timeline .swiper-slide3 {
+    display: flex;
+    background-image: url("/return/img/3s.jpg" ); 
+    min-height: 650px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  .swiper-container-wrapper--timeline .swiper-slide4 {
+    display: flex;
+    background-image: url("/return/img/4s.jpg" );
+    min-height: 650px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  .swiper-container-wrapper--timeline .swiper-slide .container {
+    padding: 0;
+    width: 100%;
+  }
+  .swiper-container-wrapper--timeline .swiper-slide .title {
+    font-size: 40px;
+    background-color: #292b2c;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s ease 0.5s;
+  }
+  .swiper-container-wrapper--timeline .swiper-slide-active .title {
+    opacity: 1;
+  }
+  .swiper-container-wrapper--timeline .swiper-pagination-progressbar {
+    position: relative;
+    margin-bottom: 70px;
+    background-color: transparent;
+    height: 4px;
+    border-bottom: 1px solid #888;
+    width: 75%;
+  }
+  .swiper-container-wrapper--timeline .swiper-pagination-progressbar-fill {
+    background-color: #000;
+    height: 3px;
+    top: 2px;
+  }
+  .swiper-container-wrapper--timeline .swiper-pagination-progressbar:before {
+    position: absolute;
+    top: 2px;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    content: "";
+  }
+  .swiper-container-wrapper--timeline .swiper-pagination-progressbar:after {
+    position: absolute;
+    top: 3px;
+    right: -100%;
+    width: 100%;
+    height: 1px;
+    background-color: #888;
+    content: "";
+  }
+  .swiper-container-wrapper--timeline .swiper-pagination-custom {
+    position: relative;
+    list-style: none;
+    margin: 1rem 0;
+    padding: 0;
+    display: flex;
+    line-height: 1.66;
+    bottom: 0;
+    z-index: 11;
+    width: 75%;
+    display: flex;
+  }
+  .swiper-container-wrapper--timeline .swiper-pagination-custom .swiper-pagination-switch {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+  }
+  .swiper-container-wrapper--timeline .swiper-pagination-custom .swiper-pagination-switch .switch-title {
+    position: absolute;
+    font-weight: 400;
+    right: 0;
+    transform: translateX(50%);
+    transition: 0.2s all ease-in-out;
+    transition-delay: 0s;
+    cursor: pointer;
+    z-index: 0;
+  }
+  .swiper-container-wrapper--timeline .swiper-pagination-custom .swiper-pagination-switch .switch-title:after {
+    position: absolute;
+    top: calc(100% + 19px);
+    right: 50%;
+    transform: translateX(50%) translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background: #000;
+    border-radius: 2rem;
+    content: "";
+    transition: 0.2s all ease-in-out;
+    transition-delay: 0s;
+    z-index: 1;
+  }
+  .swiper-container-wrapper--timeline .swiper-pagination-custom .swiper-pagination-switch.active .switch-title {
+    font-weight: 400;
+    transition-delay: 0.4s;
+  }
+  .swiper-container-wrapper--timeline .swiper-pagination-custom .swiper-pagination-switch.active .switch-title:after {
+    background: #000;
+    width: 25px;
+    height: 25px;
+    transition-delay: 0.4s;
+  }
+  .swiper-container-wrapper--timeline .swiper-pagination-custom .swiper-pagination-switch.active ~ .swiper-pagination-switch .switch-title {
+    color: #888;
+    font-weight: 16px;
+  }
+  .swiper-container-wrapper--timeline .swiper-pagination-custom .swiper-pagination-switch.active ~ .swiper-pagination-switch .switch-title:after {
+    background: #888;
+  }
+  body {
+    font-family: Arial, sans-serif;
+}
+
+select {
+    margin: 10px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.event__departments {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px auto;
+    justify-content: space-between;
+}
+
+.btn {
+    flex: 1 0 45%; /* Flex-grow: 1, Flex-shrink: 0, Flex-basis: 45% */
+    padding: 10px;
+    font-size: 16px;
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: #e0e0e0;
+}
+.btn.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+.animation {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.anima {
+  display: flex;
+  transition: transform 1s ease;
+}
+.anima img {
+  width: 100%;
+  border: 0;
+  filter: brightness(70%);
+}
+.fata {
+  min-height: 500px;
+}

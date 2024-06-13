@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="phonk">
+        <div class="txt"><p class="text">История создания Коми Научного Центра</p></div>
+            <div class="wrapper">
+                <div class="animation">
+                    <div class="anima">
+                        <img src="img/1.jpg" alt="Image 1">
+                        <img src="img/2.jpg" alt="Image 2">
+                        <img src="img/3.jpg" alt="Image 3">
+                        <img src="img/4.jpg" alt="Image 4">
+                        <img src="img/5.jpg" alt="Image 5">
+                    </div>
+                </div>
+                <div class="header" id="target-section">
+                    <a href="index.html"><img src="img/logo.svg" alt="" class="logo"></a>
+                    <div class="header_ctn">
+                        <div class="ctn1">
+                            <a href="img.html" class="src1">Ссылка 1</a>
+                            <a href="img.html#target-section" class="src2">Исторические личности</a>
+                        </div>
+                        <div class="ctn2">
+                            <a href="" class="src3">Ссылка 3</a>
+                            <a href="" class="src4">Ссылка 4</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="container">
+        <div class="sobitie">
+            <div class="left"><img src="img/картинка.jpg" alt="" class="family"></div>
+            <div class="right">
+                <div class="opisanie">
+                    <h2>Вышло в свет постановление Бюро Отделения наук о Земле АН СССР № 9 «Об организации с 1968 г. геологического музея в Институте геологии Коми филиала АН СССР».</h2>
+                    <p class="rodilsya">21.05.1968</p>
+                </div>
+                <div class="opis">
+                    <h2>Описание:</h1>
+                        <p class="pisanina">Вышло в свет постановление Бюро Отделения наук о Земле АН СССР № 9 «Об организации с 1968 г. геологического музея в Институте геологии Коми филиала АН СССР».</p>
+                </div>
+                <div class="ssilki">
+                    <div class="soychastniki">
+                        <h2>Персоны:</h2>
+                        <ul>
+                        </ul>
+                    </div>
+                        <div class="tags">
+                            <h2>Тэги:</h2>
+                            <ul>
+                                <li>геология</li>
+                            </ul>
+                        </div>
+                        <div class="scince">
+                            <h2>Направления науки</h2>
+                            <ul>
+                                <li>Геологические науки</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    let currentSlide = 0;
+    const anima = document.querySelectorAll('.anima img');
+    const totalanima = anima.length;
+
+    function showNextSlide() {
+        currentSlide = (currentSlide + 1) % totalanima;
+        const offset = -currentSlide * 100;
+        document.querySelector('.anima').style.transform = `translateX(${offset}%)`;
+    }
+
+    setInterval(showNextSlide, 7000);
+</script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+
+.personale {
+    margin-top: 160px;
+    display: flex; 
+    justify-content: space-between; 
+}
+.left_personale {
+    max-width: 1000px;
+}
+.family {
+    max-width: 900px;
+    max-height: 600px;
+    border: 1px solid black;
+}
+li {
+    line-height: 1.4;
+    margin-top: 19px;
+    font-size: 16px;
+}
+.first {
+    margin-top: 0;
+}
+.publication {
+    max-width: 630px;
+    border-radius: 20px;
+    background-color: #ccc;
+    padding: 20px;
+    padding-left: 25px;
+}
+.event {
+    max-width: 630px;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #ccc;
+    padding: 20px;
+    padding-left: 25px;
+    margin-left: 30px;
+}
+.awards {
+    margin-top: 20px;
+    max-width: 630px;
+    border-radius: 20px;
+    background-color: #ccc;
+    padding: 20px;
+    padding-left: 25px;
+}
+.more {
+    margin-top: 20px;
+    display: flex;
+
+}
+.opisanie {
+    max-width: 800px;
+    border-radius: 20px;
+    background-color: #ccc;
+    padding: 20px;
+}
+.opisanie_text {
+    font-size: 16px;
+}
+.container {
+    width: 95%;
+    margin: auto;
+}
+.dolgnost {
+    font-size: 18px;
+    font-style: italic;
+}
+.rodilsya {
+    font-size: 20px;
+    font-weight: bold;
+}
+a {
+    color: black;
+}
+a:hover {
+    color: blueviolet;
+}

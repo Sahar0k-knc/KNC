@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600&family=Sofia+Sans+Semi+Condensed:wght@400;600&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/img.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="phonk">
+        <div class="txt"><p class="text">История создания Коми Научного Центра</p></div>
+            <div class="wrapper">
+                <div class="animation">
+                    <div class="anima">
+                        <img src="img/1.jpg" alt="Image 1">
+                        <img src="img/2.jpg" alt="Image 2">
+                        <img src="img/3.jpg" alt="Image 3">
+                        <img src="img/4.jpg" alt="Image 4">
+                        <img src="img/5.jpg" alt="Image 5">
+                    </div>
+                </div>
+                <div class="header" id="target-section">
+                    <a href="index.html"><img src="img/logo.svg" alt="" class="logo"></a>
+                    <div class="header_ctn">
+                        <div class="ctn1">
+                            <a href="img.html" class="src1">Ссылка 1</a>
+                            <a href="img.html#target-section" class="src2">Исторические личности</a>
+                        </div>
+                        <div class="ctn2">
+                            <a href="" class="src3">Ссылка 3</a>
+                            <a href="" class="src4">Ссылка 4</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="main">
+        <div class="content">
+            <div class="left">
+                <h1 class="left_title">Директор ФИЦ Коми НЦ УрО РАН</h1>
+                <p class="left_text">15 июня 2022 года член-корреспондент РАН, доктор биологических наук Светлана Владимировна Дёгтева одержала победу на выборах директора ФИЦ Коми НЦ УрО РАН, набрав большинство голосов сотрудников Центра. Согласно Приказу  Минобрнауки России № 10-3/230 п-о от 5 сентября 2022 года Светлана Владимировна утверждена на должность директора ФИЦ Коми НЦ УрО РАН сроком на 5 лет.</p>
+            </div>
+            <div class="right">
+                <img src="img/tr.jpg" alt="" class="right__foto">
+            </div>
+        </div>
+    </div>
+        <div class="container">
+            <div class="personale">
+                <h1>Исторические личности</h1>
+                <form class="yyy">
+                    <input class="pisk" type="text" placeholder="Введите запрос">
+                    <button type="submit" class="btn">Найти</button>
+                </form>
+            </div>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <a href="person.html#target-section"><img src="img/karta.jpg" alt="Фото 1"></a>
+                    <p class="fio">Имя Фамилия 1</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/karta.jpg" alt="Фото 2">
+                    <p class="fio">Имя Фамилия 2</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/karta.jpg" alt="Фото 3">
+                    <p class="fio">Имя Фамилия 3</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/karta.jpg" alt="Фото 4">
+                    <p class="fio">Имя Фамилия 4</p>
+                </div>
+                <div class="gallery-item hidden">
+                    <img src="img/karta.jpg" alt="Фото 5">
+                    <p class="fio">Имя Фамилия 5</p>
+                </div>
+                <div class="gallery-item hidden">
+                    <img src="img/karta.jpg" alt="Фото 6">
+                    <p class="fio">Имя Фамилия 6</p>
+                </div>
+                <div class="gallery-item hidden">
+                    <img src="img/karta.jpg" alt="Фото 7">
+                    <p class="fio">Имя Фамилия 7</p>
+                </div>
+                <div class="gallery-item hidden">
+                    <img src="img/karta.jpg" alt="Фото 8">
+                    <p class="fio">Имя Фамилия 8</p>
+                </div>
+            </div>
+            <div class="personale">
+                <button class="btn" onclick="showMore()">Показать ещё</button>
+            </div>
+        </div>
+</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js'></script>
+<script>
+    function showMore() {
+        var hiddenItems = document.querySelectorAll('.gallery-item.hidden');
+        for (var i = 0; i < 4; i++) {
+            if (hiddenItems[i]) {
+                hiddenItems[i].classList.remove('hidden');
+            }
+        }
+    }
+</script>
+<script>
+    let currentSlide = 0;
+    const anima = document.querySelectorAll('.anima img');
+    const totalanima = anima.length;
+
+    function showNextSlide() {
+        currentSlide = (currentSlide + 1) % totalanima;
+        const offset = -currentSlide * 100;
+        document.querySelector('.anima').style.transform = `translateX(${offset}%)`;
+    }
+
+    setInterval(showNextSlide, 7000);
+</script>
+<script  src="script.js"></script>
+</body>
+</html>

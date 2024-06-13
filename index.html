@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600&family=Sofia+Sans+Semi+Condensed:wght@400;600&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="phonk">
+            <div class="txt"><p class="text">История создания Коми Научного Центра</p></div>
+            <div class="wrapper">
+                <div class="animation">
+                    <div class="anima">
+                        <img src="img/1.jpg" alt="Image 1">
+                        <img src="img/2.jpg" alt="Image 2">
+                        <img src="img/3.jpg" alt="Image 3">
+                        <img src="img/4.jpg" alt="Image 4">
+                        <img src="img/5.jpg" alt="Image 5">
+                    </div>
+                </div>
+                <div class="header" >
+                    <a href="index.html"><img src="img/logo.svg" alt="" class="logo"></a>
+                    <div class="header_ctn">
+                        <div class="ctn1">
+                            <a href="img.html" class="src1">Ссылка 1</a>
+                            <a href="img.html#target-section" class="src2">Исторические личности</a>
+                        </div>
+                        <div class="ctn2">
+                            <a href="" class="src3">Ссылка 3</a>
+                            <a href="" class="src4">Ссылка 4</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="main">
+            <div class="content">
+                <div class="left">
+                    <h1 class="left_title">Немного из истории</h1>
+                    <p class="left_text">Научный комплекс Республики Коми является одним из самых развитых среди регионов России. Еще в начале ХХ столетия на территории Республики Коми работали многочисленные научные экспедиции по изучению природных богатств Печорского края и возможностей их использования. Первое научное общество – Общество изучения Коми края - было организовано в Сыктывкаре в 1922 г. с целью всестороннего изучения Коми области. Природные ресурсы края привлекли внимание многочисленных исследовательских центров. Наряду с десятком различных экспедиций и исследовательских групп, которые работали на территории республики.</p>
+                </div>
+                <div class="right">
+                    <img src="img/ws.jpg" alt="" class="right__foto">
+                </div>
+            </div>
+    </div>
+    <div class="time">
+        <div class="container">
+            <div class="swiper-container-wrapper swiper-container-wrapper--timeline">
+                <div class="swiper swiper-container swiper-container--timeline">
+                  <div class="swiper-wrapper"> 
+                    <div class="swiper-slide swiper-slide1"><a href="main.html#target-section"><span class="title">Создан Коми научно-исследовательский институт</span></a></div>
+                    <div class="swiper-slide swiper-slide2"><a href="main.html#target-section"><span class="title">Создана научная библиотека</span></a></div>
+                    <div class="swiper-slide swiper-slide3"><a href="main.html#target-section"><span class="title">1 директор ФИЦ Коми НЦ</span></a></div>
+                    <div class="swiper-slide swiper-slide4"><a href="main.html#target-section"><span class="title">Опубликован первый музейный каталог</span></a></div>
+                  </div>
+                </div>
+                <ul class="swiper-pagination-custom">
+                    <li class='swiper-pagination-switch first active'><span class='switch-title'>Начало</span></li>
+                    <li class='swiper-pagination-switch'><span class='switch-title'>Библиотека</span></li>
+                    <li class='swiper-pagination-switch'><span class='switch-title'>1 директор</span></li>
+                    <li class='swiper-pagination-switch last'><span class='switch-title'>Музейный каталог</span></li>
+                  </ul>
+  
+                  <div class="swiper-pagination swiper-pagination-progressbar swiper-pagination-horizontal"></div>
+              </div>
+        </div>
+    </div>
+    <div class="fata">
+        <div class="container">
+            <select id="decadeSelect">
+                <option value="all">All Decades</option>
+            </select>
+            <select id="themeSelect">
+                <option value="all">All Themes</option>
+            </select>
+            <div class="event__departments"></div>
+        </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js'></script>
+    <script>
+        let currentSlide = 0;
+        const anima = document.querySelectorAll('.anima img');
+        const totalanima = anima.length;
+    
+        function showNextSlide() {
+            currentSlide = (currentSlide + 1) % totalanima;
+            const offset = -currentSlide * 100;
+            document.querySelector('.anima').style.transform = `translateX(${offset}%)`;
+        }
+    
+        setInterval(showNextSlide, 7000);
+    </script>
+    <script src="vvod.js"></script>
+    <script  src="script.js"></script>
+    <script  src="modal.js"></script>
+</body>
+</html>

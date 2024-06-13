@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/personal.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="phonk">
+        <div class="txt"><p class="text">История создания Коми Научного Центра</p></div>
+            <div class="wrapper">
+                <div class="animation">
+                    <div class="anima">
+                        <img src="img/1.jpg" alt="Image 1">
+                        <img src="img/2.jpg" alt="Image 2">
+                        <img src="img/3.jpg" alt="Image 3">
+                        <img src="img/4.jpg" alt="Image 4">
+                        <img src="img/5.jpg" alt="Image 5">
+                    </div>
+                </div>
+                <div class="header" id="target-section">
+                    <a href="index.html"><img src="img/logo.svg" alt="" class="logo"></a>
+                    <div class="header_ctn">
+                        <div class="ctn1">
+                            <a href="img.html" class="src1">Ссылка 1</a>
+                            <a href="img.html#target-section" class="src2">Исторические личности</a>
+                        </div>
+                        <div class="ctn2">
+                            <a href="" class="src3">Ссылка 3</a>
+                            <a href="" class="src4">Ссылка 4</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
+    <div class="container">
+        <div class="personale">
+            <div class="left_personale">
+                <div class="opisanie">
+                    <h2>Безносова Татьяна Михайловна</h2>
+                    <p class="dolgnost">доктор геолого-минералогических наук</p>
+                    <p class="rodilsya">19.07.1947</p>
+                    <div class="informaciya">
+                        <h2>Описание</h2>
+                        <p class="opisanie_text">В Институт геологии Коми филиала АН СССР поступила на работу в 1969 г. на должность лаборанта (лаборант, старший лаборант, младший научный сотрудник, старший научный сотрудник, ведущий научный сотрудник).В 1971 г. окончила географический факультет Коми государственного педагогического института.В 1992 г. в Институте геологии и геохимии Уральского отделения Российской академии наук (г. Свердловск) защитила кандидатскую диссертацию на тему «Биостратиграфия и брахиоподы силурийских отложений Северо-Востока европейской части СССР».В 2006 г. в Институте геологии Коми НЦ УрО РАН защитила докторскую диссертацию на тему «Развитие брахипод в позднем ордовике–раннем девоне на северо-восточной окраине палеоконтинента Балтика».</p>
+                    </div>
+                </div>
+                <div class="awards">
+                    <h2>Награды:</h2>
+                    <ul>
+                        <li>Почётная грамота Российской академии наук (2005)</li>
+                        <li>Почётная грамота Министерства науки и высшего образования Российской федерации (2022) и Республики Коми (2007)</li>
+                        <li>Почётная грамота Коми научного центра УрО РАН (2008)</li>
+                        <li>Лауреат премии Правительства Республики Коми в области научных исследований (2008)</li>
+                        <li>Почетный деятель науки Республики Коми (2017)</li>
+                        <li>Юбилейной медалью «В память 100-летия Республики Коми (2021)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right_personale">
+                <img src="img/картинка.jpg" alt="" class="family">
+            </div>
+        </div>
+        <div class="more">
+            <div class="publication">
+                <h2>Публикации:</h2>
+                <Ul>
+                    <li>«Опорные разрезы верхнего ордовика и нижнего силура Приполярного Урала» (Сыктывкар, 1987. 136 с.) (в соавторстве)«Биостратиграфия и брахиоподы силура европейского северо-востока России (СПб.: Наука, 1994. 128 с.).</li>
+                    <li>«Сообщества брахиопод и биостратиграфия верхнего ордовика, силура и нижнего девона северо-восточной окраины палеоконтинента Балтика» (Екатеринбург: УрО РАН, 2008. 218 с.).</li>
+                    <li>Геологическое наследие республики Коми (Россия). (Сыктывкар, Институт геологии Коми НЦ УрО РАН. 2008. 350 с.) (в соавторстве)</li>
+                </Ul>
+            </div>
+            <div class="event">
+                <h2>События:</h2>
+                <ul>
+                    <li><a href="event.html#target-section">Создание лаборатории стратиграфии Института геологии</a></li>
+                    <li><a href="event.html#target-section">Палеозойская пан-арктическая тектоника, эволюция бассейнов и фауны” совещание по Международному проекту геологической корреляционной программы IGCP 406.</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        let currentSlide = 0;
+        const anima = document.querySelectorAll('.anima img');
+        const totalanima = anima.length;
+    
+        function showNextSlide() {
+            currentSlide = (currentSlide + 1) % totalanima;
+            const offset = -currentSlide * 100;
+            document.querySelector('.anima').style.transform = `translateX(${offset}%)`;
+        }
+    
+        setInterval(showNextSlide, 7000);
+    </script>
+</body>
+</html>

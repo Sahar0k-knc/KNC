@@ -1,0 +1,70 @@
+.container {
+    width: 95%;
+    margin: auto;
+}
+.family {
+    max-width: 600px;
+    max-height: 900px;
+    border: 1px solid black;
+}
+.sobitie {
+    margin-top: 130px;
+}
+ul {
+    list-style-type:none;
+}
+li {
+    font-size: 16px;
+}
+.ssilki {
+    margin-top: 20px;
+    display: flex;
+}
+.sobitie {
+    display: flex;
+    justify-content: space-between;
+}
+.opisanie {
+    max-width: 600px;
+    border-radius: 20px;
+    background-color: #ccc;
+    padding: 20px;
+}
+.soychastniki {
+    margin-top: 20px;
+    max-width: 300px;
+    border-radius: 20px;
+    background-color: #ccc;
+    padding: 20px;
+}
+.tags {
+    margin-right: 30px;
+    min-width: 200px;
+    border-radius: 20px;
+    background-color: #ccc;
+    padding: 20px;
+}
+.scince {
+    max-width: 800px;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #ccc;
+    padding: 20px;
+}
+.rodilsya {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+a {
+    color: black;
+}
+a:hover {
+    color: blueviolet;
+}
+.opis {
+    max-width: 800px;
+    border-radius: 20px;
+    background-color: #ccc;
+    padding: 20px;
+}
